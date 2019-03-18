@@ -142,11 +142,11 @@
 //**********************************************************
 // Numbers and the methods available for numbers in JavaScript
 
-const number1 = 30,
-    number2 = 20,
-    number3 = -3;
-
-let result;
+//const number1 = 30,
+//    number2 = 20,
+//    number3 = -3;
+//
+//let result;
 
 //// Addition
 //result = number1 + number2;
@@ -189,8 +189,8 @@ let result;
 //result = Math.max(1, 2, 0);
 
 // BODMAS
-result = 20 + 30 * 2;
-result = (20 + 30) * 2;
+//result = 20 + 30 * 2;
+//result = (20 + 30) * 2;
 
 // 20% discount from an item
 //price = prompt('Enter price');
@@ -202,12 +202,37 @@ result = (20 + 30) * 2;
 //console.log(result);
 
 // 20% discount from shopping cart
-const cartItems = (120+300+130+110);
-const discount = cartItems / 100 * 20;
-const totalPay = cartItems - discount;
+//const cartItems = (120+300+130+110);
+//const discount = cartItems / 100 * 20;
+//const totalPay = cartItems - discount;
+//
+//// print the results
+//console.log('Total: '+cartItems);
+//console.log('Discount: '+discount);
+//console.log('Pay: '+totalPay);
 
-// print the results
-console.log('Total: '+cartItems);
-console.log('Discount: '+discount);
-console.log('Pay: '+totalPay);
+//**********************************************************
+// Comparison operators in JavaScript
+//console.log(1 > 2);
+//console.log(1 < 2);
+
+// comparing characters
+//console.log('a' > 'b');
+//console.log('a' < 'b');
+//console.log('z' > 'B');
+
+// Equality Operator
+//console.log(2 == '2');
+
+// Strict Comparison Operator(checks also the typeOf)
+//console.log(2 === '2');
+
+// Not equals
+//console.log(2 != 3);
+//console.log('hello' != ' hello');
+
+// Compare Null & Undefined
+console.log(null == undefined);
+console.log(null === undefined);
+
 
