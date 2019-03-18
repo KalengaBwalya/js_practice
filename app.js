@@ -163,6 +163,35 @@ result = number1 / number3;
 // Modulo
 result = number1 % number2; 
 
+// Pi
+result = Math.pi;
+
+// round
+result = Math.round(2.5);
+
+// round up or down: ceil & floor
+result = Math.ceil(2.2);
+result = Math.floor(2.6);
+
+//square root
+result = Math.sqrt(121);
+
+// absolute number
+result = Math.abs(number3);
+
+// power
+result = Math.pow(2, 3);
+
+// Get min number from list
+result = Math.min(1, 2, 0);
+
+// Get max number from list
+result = Math.max(1, 2, 0);
+
+
+
+
+
 
 
 console.log(result);
