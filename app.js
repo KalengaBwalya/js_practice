@@ -143,56 +143,71 @@
 // Numbers and the methods available for numbers in JavaScript
 
 const number1 = 30,
-      number2 = 20,
-      number3 = -3;
+    number2 = 20,
+    number3 = -3;
 
 let result;
 
-// Addition
-result = number1 + number2;
+//// Addition
+//result = number1 + number2;
+//
+//// Subtraction
+//result = number2 - number3;
+//
+//// Multiplication
+//result = number1 * number3;
+//
+//// Division
+//result = number1 / number3;
+//
+//// Modulo
+//result = number1 % number2; 
+//
+//// Pi
+//result = Math.pi;
+//
+//// round
+//result = Math.round(2.5);
+//
+//// round up or down: ceil & floor
+//result = Math.ceil(2.2);
+//result = Math.floor(2.6);
+//
+////square root
+//result = Math.sqrt(121);
+//
+//// absolute number
+//result = Math.abs(number3);
+//
+//// power
+//result = Math.pow(2, 3);
+//
+//// Get min number from list
+//result = Math.min(1, 2, 0);
+//
+//// Get max number from list
+//result = Math.max(1, 2, 0);
 
-// Subtraction
-result = number2 - number3;
+// BODMAS
+result = 20 + 30 * 2;
+result = (20 + 30) * 2;
 
-// Multiplication
-result = number1 * number3;
+// 20% discount from an item
+//price = prompt('Enter price');
+//
+//discount_price = price * 20 / 100;
+//result = price - discount_price;
+//alert('20% Discount: The discount is K' + discount_price + ' and the new price is: K' + result);
 
-// Division
-result = number1 / number3;
+//console.log(result);
 
-// Modulo
-result = number1 % number2; 
+// 20% discount from shopping cart
+const cartItems = (120+300+130+110);
+const discount = cartItems / 100 * 20;
+const totalPay = cartItems - discount;
 
-// Pi
-result = Math.pi;
-
-// round
-result = Math.round(2.5);
-
-// round up or down: ceil & floor
-result = Math.ceil(2.2);
-result = Math.floor(2.6);
-
-//square root
-result = Math.sqrt(121);
-
-// absolute number
-result = Math.abs(number3);
-
-// power
-result = Math.pow(2, 3);
-
-// Get min number from list
-result = Math.min(1, 2, 0);
-
-// Get max number from list
-result = Math.max(1, 2, 0);
-
-
-
-
-
-
-
-console.log(result);
+// print the results
+console.log('Total: '+cartItems);
+console.log('Discount: '+discount);
+console.log('Pay: '+totalPay);
 
