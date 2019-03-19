@@ -232,7 +232,28 @@
 //console.log('hello' != ' hello');
 
 // Compare Null & Undefined
-console.log(null == undefined);
-console.log(null === undefined);
+//console.log(null == undefined);
+//console.log(null === undefined);
+
+//**********************************************************
+// Converting strings to numbers
+
+const number1 = '3',
+      number2 = 4,
+      number3 = 'Nine';
+
+//console.log(number1 + number2);
+
+// Convert number1 into a number
+
+//console.log(parseInt(number1) + number2);
+//console.log(Number(number1) + number2);
+
+//console.log(number3);
+//console.log(Number(number3)); //NaN #Not a Number
+
+// This will work. JS convert the strnug into a number
+//console.log(number1 - number2);
+
 
 
