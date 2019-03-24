@@ -258,24 +258,57 @@
 
 // Other Methods and Values
 
-let number = '20';
-
-number = Number(number);
-number = Number('20.0012');
-number = Number(true); // 1
-number = Number(false); // 0
-number = parseInt(true); // NaN
-number = Number(null); // 0
-number = Number('Hello'); // NaN
-number = Number([1, 2, 3]); // NaN
+//let number = '20';
+//
+//number = Number(number);
+//number = Number('20.0012');
+//number = Number(true); // 1
+//number = Number(false); // 0
+//number = parseInt(true); // NaN
+//number = Number(null); // 0
+//number = Number('Hello'); // NaN
+//number = Number([1, 2, 3]); // NaN
 
 // Parse Int and Parse float
-number = parseInt('100');
-number = parseFloat('100.201');
+//number = parseInt('100');
+//number = parseFloat('100.201');
 
 // To Fixed
-number1 = '98765325',
-    number2 = 98765325.7987079;
-
-console.log(number2.toFixed(2));
+//number1 = '98765325',
+//    number2 = 98765325.7987079;
+//
+//console.log(number2.toFixed(2));
 //console.log(typeof number);
+
+
+//**********************************************************
+// Converting numbers to strings
+
+//let number = 90210,
+//    output;
+//
+//output = String(number);
+
+// Boolean to String
+
+//let output = String(true);
+
+// Date to String
+
+//output = new Date();
+//output = String(output);
+
+// Array to string
+output = String([1, 2, 3, 4]);
+
+// toString #works on objects
+
+output = true.toString();
+output = [1, 3, 5].toString();
+output = {
+    name: 'Kalenga',
+    age: 24
+}.toString();
+
+console.log(output);
+console.log(typeof output);
