@@ -237,10 +237,10 @@
 
 //**********************************************************
 // Converting strings to numbers
-
-const number1 = '3',
-      number2 = 4,
-      number3 = 'Nine';
+//
+//const number1 = '3',
+//      number2 = 4,
+//      number3 = 'Nine';
 
 //console.log(number1 + number2);
 
@@ -256,4 +256,26 @@ const number1 = '3',
 //console.log(number1 - number2);
 
 
+// Other Methods and Values
 
+let number = '20';
+
+number = Number(number);
+number = Number('20.0012');
+number = Number(true); // 1
+number = Number(false); // 0
+number = parseInt(true); // NaN
+number = Number(null); // 0
+number = Number('Hello'); // NaN
+number = Number([1, 2, 3]); // NaN
+
+// Parse Int and Parse float
+number = parseInt('100');
+number = parseFloat('100.201');
+
+// To Fixed
+number1 = '98765325',
+    number2 = 98765325.7987079;
+
+console.log(number2.toFixed(2));
+//console.log(typeof number);
