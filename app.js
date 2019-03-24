@@ -316,33 +316,53 @@
 //**********************************************************
 // Temlpate Literals or  Template Strings
 
-const product1 = 'pizza',
-    price1 = 30,
-    product2 = 'Humburger',
-    price2 = 40;
+//const product1 = 'pizza',
+//    price1 = 30,
+//    product2 = 'Humburger',
+//    price2 = 40;
+//
+//// Old Method
+//let html;
+////html = '<ul>' +
+////    '<li>Item: ' + product1 + '</li>' +
+////    '<li>Price: ' + price1 + '</li>' +
+////    '<li>Item: ' + product2 + '</li>' +
+////    '<li>Price: ' + price2 + '</li>' +
+////    '<li>Total: ' + (price1 + price2) + '</li>' +
+////    '</ul>';
+//
+//// New Method (Temlpate Literals or  Template Strings)
+//html = `
+//    <ul> 
+//        <li>Item: ${product1}</li>
+//        <li>Price: ${price1}</li>
+//        <li>Item: ${product2}</li>
+//        <li>Price: ${price2}</li>
+//        <li>Total: ${total(price1, price2)}</li>
+//    </ul>
+//`;
+//
+//function total(price1, price2) {
+//    return price1 + price2;
+//}
+//let app = document.querySelector('#app');
+//app.innerHTML = html;
 
-// Old Method
-let html;
-//html = '<ul>' +
-//    '<li>Item: ' + product1 + '</li>' +
-//    '<li>Price: ' + price1 + '</li>' +
-//    '<li>Item: ' + product2 + '</li>' +
-//    '<li>Price: ' + price2 + '</li>' +
-//    '<li>Total: ' + (price1 + price2) + '</li>' +
-//    '</ul>';
+//**********************************************************
+// Creating an Array
 
-// New Method (Temlpate Literals or  Template Strings)
-html = `
-<ul> 
-<li>Item: ${product1}</li>
-<li>Price: ${price1}</li>
-<li>Item: ${product2}</li>
-<li>Price: ${price2}</li>
-<li>Total: ${total(price1, price2)}</li>
-</ul>
-`;
-function total(price1, price2){
-    return price1 + price2;
-}
-let app = document.querySelector('#app');
-app.innerHTML = html;
+//const numbers = [1, 2, 33, 4, 15, 6, 7, 25];
+//console.log(numbers);
+
+// Array of months
+//const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
+//console.log(months);
+
+// Mixed Array
+const mixedArray = ["Hello", 2, true, 'Kalenga', null];
+//console.log(mixedArray);
+// Length of Array
+console.log(mixedArray.length);
+// Check if is array
+console.log(Array.isArray(mixedArray));
+
