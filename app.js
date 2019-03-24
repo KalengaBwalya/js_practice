@@ -299,16 +299,50 @@
 //output = String(output);
 
 // Array to string
-output = String([1, 2, 3, 4]);
+//output = String([1, 2, 3, 4]);
+//
+//// toString #works on objects
+//
+//output = true.toString();
+//output = [1, 3, 5].toString();
+//output = {
+//    name: 'Kalenga',
+//    age: 24
+//}.toString();
+//
+//console.log(output);
+//console.log(typeof output);
 
-// toString #works on objects
+//**********************************************************
+// Temlpate Literals or  Template Strings
 
-output = true.toString();
-output = [1, 3, 5].toString();
-output = {
-    name: 'Kalenga',
-    age: 24
-}.toString();
+const product1 = 'pizza',
+    price1 = 30,
+    product2 = 'Humburger',
+    price2 = 40;
 
-console.log(output);
-console.log(typeof output);
+// Old Method
+let html;
+//html = '<ul>' +
+//    '<li>Item: ' + product1 + '</li>' +
+//    '<li>Price: ' + price1 + '</li>' +
+//    '<li>Item: ' + product2 + '</li>' +
+//    '<li>Price: ' + price2 + '</li>' +
+//    '<li>Total: ' + (price1 + price2) + '</li>' +
+//    '</ul>';
+
+// New Method (Temlpate Literals or  Template Strings)
+html = `
+<ul> 
+<li>Item: ${product1}</li>
+<li>Price: ${price1}</li>
+<li>Item: ${product2}</li>
+<li>Price: ${price2}</li>
+<li>Total: ${total(price1, price2)}</li>
+</ul>
+`;
+function total(price1, price2){
+    return price1 + price2;
+}
+let app = document.querySelector('#app');
+app.innerHTML = html;
