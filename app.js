@@ -355,14 +355,27 @@
 //console.log(numbers);
 
 // Array of months
-//const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
+const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
 //console.log(months);
 
 // Mixed Array
-const mixedArray = ["Hello", 2, true, 'Kalenga', null];
+//const mixedArray = ["Hello", 2, true, 'Kalenga', null];
 //console.log(mixedArray);
 // Length of Array
-console.log(mixedArray.length);
+//console.log(mixedArray.length);
 // Check if is array
-console.log(Array.isArray(mixedArray));
+//console.log(Array.isArray(mixedArray));
+// Change Value of an Array
+//months[1] = 'January';
+//console.log(months[1]);
+// Find Something in Array
+//console.log(months.indexOf('Apr'));
+// Add item to an array (at the end)
+months.push('Jul');
+// Add item to an array at the beginning
+months.unshift('New Month');
+// Add an item in the middle of an array
+months.splice(3, null, 'A new Month');
+console.log(months);
+
 
