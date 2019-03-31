@@ -371,17 +371,33 @@ const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
 // Find Something in Array
 //console.log(months.indexOf('Apr'));
 // Add item to an array (at the end)
-months.push('Jul');
-// Add item to an array at the beginning
-months.unshift('New Month');
-// Add an item in the middle of an array
-months.splice(3, null, 'A new Month');
-// Remove Element from the end of array
-months.pop();
-// Remove element from the beginning of an array
-months.shift();
-// Remove element from the middle of an array
-months.splice(3, 1);
-console.log(months);
-
-
+//months.push('Jul');
+//// Add item to an array at the beginning
+//months.unshift('New Month');
+//// Add an item in the middle of an array
+//months.splice(3, null, 'A new Month');
+//// Remove Element from the end of array
+//months.pop();
+//// Remove element from the beginning of an array
+//months.shift();
+//// Remove element from the middle of an array
+//months.splice(3, 1);
+// Reverse
+//months.reverse();
+//// Concatenate two arrays
+////const array1 = [1, 2, 3],
+////      array2 = [4, 5, 6];
+//console.log(array1.concat(array2));
+// Order an array(sort)
+//let fruits = ['Banana', 'Apple', 'Lime', 'Grape'];
+//console.log(fruits.sort());
+// Order numbers from lower to greater
+let numbers = [1, 23, 3, 4, 56, 7, 3, 100, 29, 35];
+numbers.sort(function (number1, number2) {
+    return number1 - number2;
+});
+// Order numbers from greater to lower
+numbers.sort(function (number1, number2) {
+    return number2 - number1;
+});
+console.log(numbers);
