@@ -376,6 +376,12 @@ months.push('Jul');
 months.unshift('New Month');
 // Add an item in the middle of an array
 months.splice(3, null, 'A new Month');
+// Remove Element from the end of array
+months.pop();
+// Remove element from the beginning of an array
+months.shift();
+// Remove element from the middle of an array
+months.splice(3, 1);
 console.log(months);
 
 
