@@ -355,7 +355,7 @@
 //console.log(numbers);
 
 // Array of months
-const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
+//const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
 //console.log(months);
 
 // Mixed Array
@@ -392,12 +392,53 @@ const months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun');
 //let fruits = ['Banana', 'Apple', 'Lime', 'Grape'];
 //console.log(fruits.sort());
 // Order numbers from lower to greater
-let numbers = [1, 23, 3, 4, 56, 7, 3, 100, 29, 35];
-numbers.sort(function (number1, number2) {
-    return number1 - number2;
-});
-// Order numbers from greater to lower
-numbers.sort(function (number1, number2) {
-    return number2 - number1;
-});
-console.log(numbers);
+//let numbers = [1, 23, 3, 4, 56, 7, 3, 100, 29, 35];
+//numbers.sort(function (number1, number2) {
+//    return number1 - number2;
+//});
+//// Order numbers from greater to lower
+//numbers.sort(function (number1, number2) {
+//    return number2 - number1;
+//});
+//console.log(numbers);
+
+//**********************************************************
+// JavaScript Objects
+
+//const Person = {
+//    firstname: 'Kalenga',
+//    lastname: 'Bwalya',
+//    email: 'kalengabwalya@gmail.com',
+//    age: 25,
+//    favoriteMusic: ['Afrobeat', 'HipHop', 'R&B', 'Gospel'],
+//    living: {
+//        city: 'Lusaka',
+//        country: 'Zambia',
+//        continent: 'Africa'
+//    },
+//    getAge: function(){
+//        return this.age;
+//    },
+//    bornYear: function(){
+//        return new Date().getFullYear() - this.age;
+//    }
+//};
+//
+//console.log(Person.age);
+//console.log(Person.favoriteMusic);
+//console.log(Person.living); 
+//console.log(Person.getAge());
+//console.log(Person.bornYear());
+
+// Array of objects
+let cars = [
+    {model: 'Mustang', engine: '6.0'},
+    {model: 'Mercedeze', engine: '5.0'},
+    {model: 'Ferrari', engine: '7.1'},
+    {model: 'Lambouhginni', engine: '8.6'}
+];
+
+console.log(cars);
+for(let i = 0; i < cars.length; i++){
+    console.log(cars[i].model);
+}
