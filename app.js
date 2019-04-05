@@ -431,14 +431,47 @@
 //console.log(Person.bornYear());
 
 // Array of objects
-let cars = [
-    {model: 'Mustang', engine: '6.0'},
-    {model: 'Mercedeze', engine: '5.0'},
-    {model: 'Ferrari', engine: '7.1'},
-    {model: 'Lambouhginni', engine: '8.6'}
-];
+//let cars = [
+//    {
+//        model: 'Mustang',
+//        engine: '6.0'
+//    },
+//    {
+//        model: 'Mercedeze',
+//        engine: '5.0'
+//    },
+//    {
+//        model: 'Ferrari',
+//        engine: '7.1'
+//    },
+//    {
+//        model: 'Lambouhginni',
+//        engine: '8.6'
+//    }
+//];
+//
+//console.log(cars);
+//for (let i = 0; i < cars.length; i++) {
+//    console.log(cars[i].model);
+//}
 
-console.log(cars);
-for(let i = 0; i < cars.length; i++){
-    console.log(cars[i].model);
-}
+// const in Arrays & Objects
+
+const newArray = [1, 2, 3, 4];
+newArray[0] = 'New element in array';
+newArray.push('New element');
+//newArray = [1, 4, 7]; // Error
+console.log(newArray);
+
+const Car = {
+    model: 'Mustang',
+    engine: '6.0'
+};
+Car.engine = '6.4';
+
+// ErroR!
+//Car = {
+//     model: 'Mustang',
+//    engine: '6.0'
+//};
+console.log(Car);
