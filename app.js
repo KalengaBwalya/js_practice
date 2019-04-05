@@ -457,21 +457,41 @@
 
 // const in Arrays & Objects
 
-const newArray = [1, 2, 3, 4];
-newArray[0] = 'New element in array';
-newArray.push('New element');
-//newArray = [1, 4, 7]; // Error
-console.log(newArray);
-
-const Car = {
-    model: 'Mustang',
-    engine: '6.0'
-};
-Car.engine = '6.4';
-
-// ErroR!
-//Car = {
-//     model: 'Mustang',
+//const newArray = [1, 2, 3, 4];
+//newArray[0] = 'New element in array';
+//newArray.push('New element');
+////newArray = [1, 4, 7]; // Error
+//console.log(newArray);
+//
+//const Car = {
+//    model: 'Mustang',
 //    engine: '6.0'
 //};
-console.log(Car);
+//Car.engine = '6.4';
+//
+//// ErroR!
+////Car = {
+////     model: 'Mustang',
+////    engine: '6.0'
+////};
+//console.log(Car);
+
+//**********************************************************
+// JavaScript FUNCTIONS
+// function declaration
+
+function HelloVisitor(firstname = 'Visitor', lastname = 'Bwalya') {
+    console.log(`Hello ${firstname} ${lastname}, welcome`);
+}
+
+//function has to be called
+HelloVisitor('Kalenga');
+
+function addition(x, y){
+    return x + y;
+}
+let result;
+result = addition(10, 15);
+result2 = addition(10, 1);
+
+console.log(`${result}, ${result2}`);
