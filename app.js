@@ -480,18 +480,28 @@
 // JavaScript FUNCTIONS
 // function declaration
 
-function HelloVisitor(firstname = 'Visitor', lastname = 'Bwalya') {
-    console.log(`Hello ${firstname} ${lastname}, welcome`);
-}
+// function HelloVisitor(firstname = 'Visitor', lastname = 'Bwalya') {
+//     console.log(`Hello ${firstname} ${lastname}, welcome`);
+// }
 
-//function has to be called
-HelloVisitor('Kalenga');
+// //function has to be called
+// HelloVisitor('Kalenga');
 
-function addition(x, y){
-    return x + y;
-}
-let result;
-result = addition(10, 15);
-result2 = addition(10, 1);
+// function addition(x, y){
+//     return x + y;
+// }
+// let result;
+// result = addition(10, 15);
+// result2 = addition(10, 1);
 
-console.log(`${result}, ${result2}`);
+// console.log(`${result}, ${result2}`);
+
+//function expression
+const sum = function(numb1 = 0, numb2 = 0){
+    return numb1 + numb2;
+};
+
+console.log(sum(3, 4));
+console.log(sum(7, 4));
+console.log(sum(1, 4));
+console.log(sum());
