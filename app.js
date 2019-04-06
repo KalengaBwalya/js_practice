@@ -517,27 +517,53 @@
 // })('JavaScript');
 
 // Property Methods
-const musicPlayer = {
-    play: function (id) {
-        console.log(`Play song number ${id}`);
-    },
-    pause: function () {
-        console.log('Pause...');
-    }
-};
+// const musicPlayer = {
+//     play: function (id) {
+//         console.log(`Play song number ${id}`);
+//     },
+//     pause: function () {
+//         console.log('Pause...');
+//     }
+// };
 
-musicPlayer.play(12);
-musicPlayer.play(5);
-musicPlayer.pause();
+// musicPlayer.play(12);
+// musicPlayer.play(5);
+// musicPlayer.pause();
 
-// Methods can be outside the object
-musicPlayer.remove = function (id) {
-    console.log(`Song number ${id} removed form the playlist`);
-};
-musicPlayer.remove(12);
+// // Methods can be outside the object
+// musicPlayer.remove = function (id) {
+//     console.log(`Song number ${id} removed form the playlist`);
+// };
+// musicPlayer.remove(12);
 
-// Common JS functions
-console.log();
-alert();
-prompt();
-confirm();
+// // Common JS functions
+// console.log();
+// alert();
+// prompt();
+// confirm();
+
+//**********************************************************
+// Dates in JavaScript
+
+const today = new Date();
+let output;
+// // Month Day Year
+// let birthday = new Date('March 15 1994');
+// // M-D-Y
+// birthday = new Date('3-15-1994');
+
+// output = birthday;
+
+//Methods in dates
+output = today.getMonth();
+output = today.getDate();
+output = today.getDay();
+output = today.getFullYear();
+output = today.getMinutes();
+output = today.getHours();
+today.setFullYear(2000);
+output = today.getFullYear();
+today.setMonth(10);
+output = today.getMonth();
+
+console.log(today);
