@@ -710,10 +710,29 @@
 // }
 
 // Breaking the for loop
-for (let i = 0; i <= 10; i++) {
-    if (i === 2) {
-        console.log('Yes, 2!!');
-        break;
-    }
-    console.log(`Number: ${i}`);
+// for (let i = 0; i <= 10; i++) {
+//     if (i === 2) {
+//         console.log('Yes, 2!!');
+//         break;
+//     }
+//     console.log(`Number: ${i}`);
+// }
+
+// even numbers
+// for(let i = 0; i <= 10; i++){
+//     if(i % 2 == 0){
+//         console.log(`${i} is even`);
+//     } else {
+//         console.log(`${i} is odd`);
+//     }
+// }
+
+// for loop and arrays
+
+const shoppingCart = ['Product 1', 'Product 2', 'Product 3'];
+for(let i = 0; i < shoppingCart.length; i++){
+    console.log(shoppingCart[i]);
 }
+
+
+
