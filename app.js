@@ -610,11 +610,42 @@
 // } else {
 //     console.log('No score...');
 // }
-let cash = 500;
-let cartTotal = 300;
-let balance = cash - cartTotal;
-if(cash > cartTotal){
-    console.log(`Transaction Successful, your balance is $${balance}`);
-} else {
-    console.log('Insufficient funds...')
-}
+// let cash = 500;
+// let cartTotal = 300;
+// let balance = cash - cartTotal;
+// if(cash > cartTotal){
+//     console.log(`Transaction Successful, your balance is $${balance}`);
+// } else {
+//     console.log('Insufficient funds...')
+// }
+
+// ELSE if operator
+
+// let hours = new Date().getHours(),
+//     minutes = new Date().getMinutes();
+
+// if(hours < 12){
+//     console.log(`Good Morning, the time is ${hours}:${minutes}`);
+// } else if(hours >= 12 && hours < 18){
+//     console.log(`Good Afternoon, the time is ${hours}:${minutes}`);
+// } else {
+//     console.log('Good Night!');
+// }
+
+// OR operator
+// let cash = 100,
+//     credit = 300,
+//     cartTotal = 200,
+//     available = cash + credit;
+
+// if(cash >= cartTotal || cartTotal <= credit){
+//     console.log('You can pay with cash or credit');
+// } else if (available >= cartTotal) {
+//     console.log('You can pay with both cash and credit');
+// } else {
+//     console.log('Insufficient funds');
+// }
+
+// Ternary Operator
+const loggedIn = true;
+console.log(loggedIn === true ? 'The user is logged in' : 'User not logged in');
