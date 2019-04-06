@@ -497,11 +497,47 @@
 // console.log(`${result}, ${result2}`);
 
 //function expression
-const sum = function(numb1 = 0, numb2 = 0){
-    return numb1 + numb2;
+// const sum = function(numb1 = 0, numb2 = 0){
+//     return numb1 + numb2;
+// };
+
+// console.log(sum(3, 4));
+// console.log(sum(7, 4));
+// console.log(sum(1, 4));
+// console.log(sum());
+
+// functions that are invoked immediately(IIFES)
+// Immediately  invoked function expressions
+// (function () {
+//     console.log('This is an IIFE');
+// })();
+// // IIFES with arguments
+// (function (technology) {
+//     console.log('Learning ' + technology);
+// })('JavaScript');
+
+// Property Methods
+const musicPlayer = {
+    play: function (id) {
+        console.log(`Play song number ${id}`);
+    },
+    pause: function () {
+        console.log('Pause...');
+    }
 };
 
-console.log(sum(3, 4));
-console.log(sum(7, 4));
-console.log(sum(1, 4));
-console.log(sum());
+musicPlayer.play(12);
+musicPlayer.play(5);
+musicPlayer.pause();
+
+// Methods can be outside the object
+musicPlayer.remove = function (id) {
+    console.log(`Song number ${id} removed form the playlist`);
+};
+musicPlayer.remove(12);
+
+// Common JS functions
+console.log();
+alert();
+prompt();
+confirm();
