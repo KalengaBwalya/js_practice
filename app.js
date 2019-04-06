@@ -581,23 +581,40 @@
 // }
 
 // Equal
-const score = 100;
-if(score == '100'){
-    console.log('Yes, it is equal');
-} else {
-    console.log('No, it is different');
-}
+// const score = 100;
+// if(score == '100'){
+//     console.log('Yes, it is equal');
+// } else {
+//     console.log('No, it is different');
+// }
 
-// Not Equal
-if(score != 100){
-    console.log('Yes, it is different');
-} else {
-    console.log('No, it is equal');
-}
+// // Not Equal
+// if(score != 100){
+//     console.log('Yes, it is different');
+// } else {
+//     console.log('No, it is equal');
+// }
 
-// Strict comparison operator (Recommended)
-if(score === '100'){
-    console.log('Damn right');
+// // Strict comparison operator (Recommended)
+// if(score === '100'){
+//     console.log('Damn right');
+// } else {
+//     console.log('They\'re different');
+// }
+
+// Check if variable has value
+// let score;
+// // if(score) or:
+// if(typeof score != 'undefined'){
+//     console.log(`Yes, and the score is ${score}`);
+// } else {
+//     console.log('No score...');
+// }
+let cash = 500;
+let cartTotal = 300;
+let balance = cash - cartTotal;
+if(cash > cartTotal){
+    console.log(`Transaction Successful, your balance is $${balance}`);
 } else {
-    console.log('They\'re different');
+    console.log('Insufficient funds...')
 }
