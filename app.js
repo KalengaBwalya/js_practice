@@ -729,10 +729,34 @@
 
 // for loop and arrays
 
-const shoppingCart = ['Product 1', 'Product 2', 'Product 3'];
-for(let i = 0; i < shoppingCart.length; i++){
-    console.log(shoppingCart[i]);
-}
+// const shoppingCart = ['Product 1', 'Product 2', 'Product 3'];
+// for(let i = 0; i < shoppingCart.length; i++){
+//     console.log(shoppingCart[i]);
+// }
 
+// While Loops
 
+// let i = 0;
 
+// while(i < 10){
+//     i++;
+//     console.log(`Number: ${i}`);
+// }
+
+// Looping an array with while
+
+// const buses = ['Euro-Africa', 'Wada Chovu', 'Jonda', 'Andrich', 'Power Tools'];
+// let i = 0;
+// while (i < buses.length) {
+//     bus = buses[i];
+//     console.log(bus);
+//     i++;
+// }
+
+// Do While Loops (Note: the Do while runs at least once before checking the condition)
+let j = 10;
+
+do {
+    console.log(`Number: ${j}, Unconditional!!`);
+    j++;
+} while(j < 10);
