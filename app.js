@@ -545,25 +545,59 @@
 //**********************************************************
 // Dates in JavaScript
 
-const today = new Date();
-let output;
-// // Month Day Year
-// let birthday = new Date('March 15 1994');
-// // M-D-Y
-// birthday = new Date('3-15-1994');
+// const today = new Date();
+// let output;
+// // // Month Day Year
+// // let birthday = new Date('March 15 1994');
+// // // M-D-Y
+// // birthday = new Date('3-15-1994');
 
-// output = birthday;
+// // output = birthday;
 
-//Methods in dates
-output = today.getMonth();
-output = today.getDate();
-output = today.getDay();
-output = today.getFullYear();
-output = today.getMinutes();
-output = today.getHours();
-today.setFullYear(2000);
-output = today.getFullYear();
-today.setMonth(10);
-output = today.getMonth();
+// //Methods in dates
+// output = today.getMonth();
+// output = today.getDate();
+// output = today.getDay();
+// output = today.getFullYear();
+// output = today.getMinutes();
+// output = today.getHours();
+// today.setFullYear(2000);
+// output = today.getFullYear();
+// today.setMonth(10);
+// output = today.getMonth();
 
-console.log(today);
+// console.log(today);
+
+//**********************************************************
+// Control Statements in JavaScript
+
+// if Operator
+// const learningJavaScript = false;
+
+// if (learningJavaScript) {
+//     console.log('JS is awesome');
+// } else {
+//     console.log('Yanks, JS is fantastic');
+// }
+
+// Equal
+const score = 100;
+if(score == '100'){
+    console.log('Yes, it is equal');
+} else {
+    console.log('No, it is different');
+}
+
+// Not Equal
+if(score != 100){
+    console.log('Yes, it is different');
+} else {
+    console.log('No, it is equal');
+}
+
+// Strict comparison operator (Recommended)
+if(score === '100'){
+    console.log('Damn right');
+} else {
+    console.log('They\'re different');
+}
