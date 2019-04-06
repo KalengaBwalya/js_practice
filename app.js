@@ -768,12 +768,25 @@
 // });
 
 // Map
-const shoppingCart = [
-    {id: 1, name: 'Book'},
-    {id: 2, name: 'Phone'},
-    {id: 3, name: 'Headphones'}
-];
-const productName = shoppingCart.map(function(productName){
-    return productName.name;
-})
-console.log(productName);
+// const shoppingCart = [
+//     {id: 1, name: 'Book'},
+//     {id: 2, name: 'Phone'},
+//     {id: 3, name: 'Headphones'}
+// ];
+// const productName = shoppingCart.map(function(productName){
+//     return productName.name;
+// });
+// console.log(productName);
+
+// Iterators in ES6
+let myCar = {
+    name: 'Camaro',
+    engine: '4.8 Turbo',
+    model: 'L23R',
+    colour: 'Black',
+    make: 'Chevy'
+};
+
+for(let key in myCar){
+    console.log(`${key}: ${myCar[key]}`);
+}
