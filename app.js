@@ -647,5 +647,50 @@
 // }
 
 // Ternary Operator
-const loggedIn = true;
-console.log(loggedIn === true ? 'The user is logged in' : 'User not logged in');
+// const loggedIn = true;
+// console.log(loggedIn === true ? 'The user is logged in' : 'User not logged in');
+
+// Switch
+const paymentMethod = 'cash';
+switch (paymentMethod) {
+    case 'cash':
+        console.log(`Your Payment method is ${paymentMethod}`);
+        break;
+
+    case 'check':
+        console.log(`Your Payment method is ${paymentMethod}, we we verify soon`);
+        break;
+
+    case 'card':
+        console.log(`Your Payment method is ${paymentMethod}, processing`);
+        break;
+
+    default:
+        console.log('Please select a valid payment method');
+        break;
+}
+
+// Assign a variable from a switch case
+
+const cars = ['Mustang', 'Pajero', 'Ranger'];
+const selected = 2;
+let car;
+
+switch (selected) {
+    case 0:
+        car = cars[0]
+        break;
+
+    case 1:
+        car = cars[1]
+        break;
+
+    case 2:
+        car = cars[2]
+        break;
+
+    default:
+        console.log('Please select a car');
+        break;
+}
+console.log(`We have a ${car}`);
