@@ -754,9 +754,26 @@
 // }
 
 // Do While Loops (Note: the Do while runs at least once before checking the condition)
-let j = 10;
+// let j = 10;
 
-do {
-    console.log(`Number: ${j}, Unconditional!!`);
-    j++;
-} while(j < 10);
+// do {
+//     console.log(`Number: ${j}, Unconditional!!`);
+//     j++;
+// } while(j < 10);
+
+// foreach
+// const todo = ['Homework', 'Meditation', 'Coding', 'Music Production'];
+// todo.forEach(function(assignment, index){
+//     console.log(`${index}: ${assignment}`);
+// });
+
+// Map
+const shoppingCart = [
+    {id: 1, name: 'Book'},
+    {id: 2, name: 'Phone'},
+    {id: 3, name: 'Headphones'}
+];
+const productName = shoppingCart.map(function(productName){
+    return productName.name;
+})
+console.log(productName);
