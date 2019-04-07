@@ -779,14 +779,34 @@
 // console.log(productName);
 
 // Iterators in ES6
-let myCar = {
-    name: 'Camaro',
-    engine: '4.8 Turbo',
-    model: 'L23R',
-    colour: 'Black',
-    make: 'Chevy'
-};
+// let myCar = {
+//     name: 'Camaro',
+//     engine: '4.8 Turbo',
+//     model: 'L23R',
+//     colour: 'Black',
+//     make: 'Chevy'
+// };
 
-for(let key in myCar){
-    console.log(`${key}: ${myCar[key]}`);
+// for(let key in myCar){
+//     console.log(`${key}: ${myCar[key]}`);
+// }
+
+// Try Catch
+try {
+    someThing();
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log('Execute always no matter what!');
 }
+
+
+function getClients() {
+    console.log('Downloading');
+
+    setTimeout(function () {
+        console.log('Complete...');
+    }, 3000);
+}
+
+getClients();
