@@ -792,21 +792,62 @@
 // }
 
 // Try Catch
-try {
-    someThing();
-} catch (error) {
-    console.log(error);
-} finally {
-    console.log('Execute always no matter what!');
-}
+// try {
+//     someThing();
+// } catch (error) {
+//     console.log(error);
+// } finally {
+//     console.log('Execute always no matter what!');
+// }
 
 
-function getClients() {
-    console.log('Downloading');
+// function getClients() {
+//     console.log('Downloading');
 
-    setTimeout(function () {
-        console.log('Complete...');
-    }, 3000);
-}
+//     setTimeout(function () {
+//         console.log('Complete...');
+//     }, 3000);
+// }
 
-getClients();
+// getClients();
+
+//**********************************************************
+// The Window Object
+
+// Confirm
+// if(confirm('Are you sure?')){
+//     console.log('Deleted');
+// } else {
+//     console.log('Nothing happens...');
+// }
+
+// E.G Retrive height and width of window
+// let height, width;
+
+//     height = window.outerHeight;
+//     width = window.outerWidth;
+
+//     height = window.innerHeight;
+//     width = window.innerWidth;
+
+//     if(width > 1000) {
+//         document.body.style.backgroundColor = "red"; 
+//     } else if (width > 500) {
+//         document.body.style.backgroundColor = "yellow";
+//     } else {
+//         document.body.style.backgroundColor = "green";
+//     }
+
+// console.log(`The height is ${height} and the width is ${width}`);
+
+// Location
+
+let urlLocation = window.location;
+console.log(urlLocation.host);
+console.log(urlLocation.hostname);
+console.log(urlLocation.port);
+
+// // Redirect via JS
+// window.location.href = 'https://www.google.com';
+
+console.log(urlLocation);
