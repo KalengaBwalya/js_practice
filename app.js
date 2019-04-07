@@ -860,28 +860,27 @@ let b = 'b';
 const c = 'c';
 
 // Function scope
-function function_scope(){
+function function_scope() {
     var a = 'A';
     let b = 'B';
     const c = 'C';
-    console.log('FUNCTION SCOPE: '+ a, b, c);
+    console.log('FUNCTION SCOPE: ' + a, b, c);
 }
 
 function_scope();
 
 // Block Scope (if statements of for loops)
 // if statement
-if(true){
+if (true) {
     let a = 'AA';
     let b = 'BB';
     const c = 'CC';
-    console.log('BLOCK SCOPE: '+ a, b, c);
+    console.log('BLOCK SCOPE: ' + a, b, c);
 }
 
 // for loop
-for(let a = 0; a < 10; a++){
+for (let a = 0; a < 10; a++) {
     console.log(`a is ${a}`);
 }
 
-console.log('GLOBAL: '+ a, b, c);
-
+console.log('GLOBAL: ' + a, b, c);
