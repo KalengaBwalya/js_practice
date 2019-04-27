@@ -113,13 +113,48 @@
 
 // //getElementsByTagName
 
-const images = document.getElementsByTagName('img');
-// console.log(images[0].id);
+// const images = document.getElementsByTagName('img');
+// // console.log(images[0].id);
 
-// Convert HTML Collection into array
-imagesArray = Array.from(images);
+// // Convert HTML Collection into array
+// imagesArray = Array.from(images);
 
-imagesArray.forEach(function(image){
-    console.log(image);
+// imagesArray.forEach(function(image){
+//     console.log(image);
+// });
+// console.log(imagesArray);
+
+// const courses = document.querySelectorAll('.card h4');
+
+// const coursesArray = Array.from(courses);
+// coursesArray.forEach(function(course){
+//     console.log(course);
+// });
+// console.log(courses); 
+
+// // Select odd links
+// const oddLinks = document.querySelectorAll('#primary a:nth-child(odd)');
+
+// oddLinks.forEach(function(odd){
+//     odd.style.backgroundColor = 'red';
+//     odd.style.color = 'white';
+// })
+
+
+// // Select even links
+// const evenLinks = document.querySelectorAll('#primary a:nth-child(even)');
+
+// evenLinks.forEach(function(even){
+//     even.style.backgroundColor = 'green';
+//     even.style.color = 'white';
+// })
+
+// Changing add-to-cart button text
+
+const addToCartBtns = document.querySelectorAll('.add-to-cart');
+
+addToCartBtns.forEach(function(btn){
+    btn.textContent = "New Text";
 });
-console.log(imagesArray);
+
+
