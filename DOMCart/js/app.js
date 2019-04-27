@@ -82,15 +82,44 @@
 // console.log(heading);
 
 // Nest your selectors with a CSS syntax
-let firstImage = document.querySelector('.card img');
-console.log(firstImage);
+// let firstImage = document.querySelector('.card img');
+// console.log(firstImage);
 
-// querySelector supports nth child, first child and last child
-let link;
+// // querySelector supports nth child, first child and last child
+// let link;
 
-link = document.querySelector('#primary a:first-child');
-link = document.querySelector('#primary a:last-child');
-link = document.querySelector('#primary a:nth-child(3)');
+// link = document.querySelector('#primary a:first-child');
+// link = document.querySelector('#primary a:last-child');
+// link = document.querySelector('#primary a:nth-child(3)');
 
 
-console.log(link);
+// console.log(link);
+
+// getElementsByClassName
+
+// const links = document.getElementsByClassName('link');
+
+// links[0].style.color = 'red';
+
+// links[0].textContent = "New Text";
+
+// console.log(links[0]);
+
+// Say we wanna get link with Id #primary
+
+// const primaryLinks = document.querySelector('#primary').getElementsByClassName('link');
+
+// console.log(primaryLinks); 
+
+// //getElementsByTagName
+
+const images = document.getElementsByTagName('img');
+// console.log(images[0].id);
+
+// Convert HTML Collection into array
+imagesArray = Array.from(images);
+
+imagesArray.forEach(function(image){
+    console.log(image);
+});
+console.log(imagesArray);
