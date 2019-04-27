@@ -151,10 +151,16 @@
 
 // Changing add-to-cart button text
 
-const addToCartBtns = document.querySelectorAll('.add-to-cart');
+// const addToCartBtns = document.querySelectorAll('.add-to-cart');
 
-addToCartBtns.forEach(function(btn){
-    btn.textContent = "New Text";
-});
+// addToCartBtns.forEach(function(btn){
+//     btn.textContent = "New Text";
+// });
 
+// Traversing
 
+const navigation = document.querySelector('#primary');
+let element;
+// element = navigation.childNodes;
+element = navigation.children[0].textContent = "New Text";
+console.log(element);
