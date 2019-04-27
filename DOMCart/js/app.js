@@ -157,10 +157,25 @@
 //     btn.textContent = "New Text";
 // });
 
-// Traversing
+//  
 
-const navigation = document.querySelector('#primary');
+// const navigation = document.querySelector('#primary');
+// let element;
+// // element = navigation.childNodes;
+// // element = navigation.children;
+// // 1 = element
+// // 2 = Attribute
+// // 3 = Text Nodes
+// // 8 = Comments
+// // 9 = document
+// // 10 = doctype
+
+// element = navigation.children[0].textContent = "New Text";
+// console.log(element);
+
+const coursesList = document.querySelector('#courses-list');
 let element;
-// element = navigation.childNodes;
-element = navigation.children[0].textContent = "New Text";
+element = coursesList.children[1].children[1].children[0].children[1].lastElementChild;
+element = coursesList.children[1].children[1].children[0].children[1].firstElementChild;
+element = coursesList.children[1].children[1].children[0].children[1].childElementCount;
 console.log(element);
