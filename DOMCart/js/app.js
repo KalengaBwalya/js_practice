@@ -181,7 +181,7 @@
 // console.log(element);
 
 // Traversing from children to parent
-const cartBtn = document.querySelector(".add-to-cart");
+// const cartBtn = document.querySelector(".add-to-cart");
 
 // let parent;
 
@@ -219,18 +219,33 @@ const cartBtn = document.querySelector(".add-to-cart");
 // parent.appendChild(newLink);
 // console.log(parent);
 
-// Replace an Element
-const newHeading  = document.createElement('h1');
-// add id
-newHeading.id = 'heading';
-// add class
-newHeading.className = 'heading'
-// Add text
-newHeading.appendChild(document.createTextNode('The Great Courses'));
+// // Replace an Element
+// const newHeading  = document.createElement('h1');
+// // add id
+// newHeading.id = 'heading';
+// // add class
+// newHeading.className = 'heading'
+// // Add text
+// newHeading.appendChild(document.createTextNode('The Great Courses'));
 
-// Replace in the HTML
-const oldHeading = document.querySelector('#heading');
+// // Replace in the HTML
+// const oldHeading = document.querySelector('#heading');
 
-oldHeading.replaceWith(newHeading);
+// oldHeading.replaceWith(newHeading);
 
-console.log(newHeading);
+// console.log(newHeading);
+
+//Remove Elements
+const cards = document.querySelectorAll('.card');
+
+cards[0].remove();
+
+console.log(cards);
+
+// Remove by the children
+
+const navigation = document.querySelector('#primary');
+const links = document.querySelectorAll('#primary .link')
+
+navigation.removeChild(links[2]);
+console.log(links);
