@@ -173,9 +173,32 @@
 // element = navigation.children[0].textContent = "New Text";
 // console.log(element);
 
-const coursesList = document.querySelector('#courses-list');
-let element;
-element = coursesList.children[1].children[1].children[0].children[1].lastElementChild;
-element = coursesList.children[1].children[1].children[0].children[1].firstElementChild;
-element = coursesList.children[1].children[1].children[0].children[1].childElementCount;
+// const coursesList = document.querySelector('#courses-list');
+// let element;
+// element = coursesList.children[1].children[1].children[0].children[1].lastElementChild;
+// element = coursesList.children[1].children[1].children[0].children[1].firstElementChild;
+// element = coursesList.children[1].children[1].children[0].children[1].childElementCount;
+// console.log(element);
+
+// Traversing from children to parent
+const cartBtn = document.querySelector(".add-to-cart");
+
+// let parent;
+
+// parent = cartBtn.parentNode;
+// parent = cartBtn.parentElement;
+// parent = cartBtn.parentElement.parentElement;
+// parent = cartBtn.parentElement.parentElement.children[0];
+
+// console.log(parent);
+
+// Sibling
+element = cartBtn.parentElement.children[0].nextElementSibling;
+element = cartBtn.previousElementSibling;
+
+// e.g Course name
+const courseName = cartBtn.parentElement.querySelector('h4');
+element = courseName.nextElementSibling.nextElementSibling;
 console.log(element);
+
+
