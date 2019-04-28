@@ -192,13 +192,29 @@ const cartBtn = document.querySelector(".add-to-cart");
 
 // console.log(parent);
 
-// Sibling
-element = cartBtn.parentElement.children[0].nextElementSibling;
-element = cartBtn.previousElementSibling;
+// // Sibling
+// element = cartBtn.parentElement.children[0].nextElementSibling;
+// element = cartBtn.previousElementSibling;
 
-// e.g Course name
-const courseName = cartBtn.parentElement.querySelector('h4');
-element = courseName.nextElementSibling.nextElementSibling;
-console.log(element);
+// // e.g Course name
+// const courseName = cartBtn.parentElement.querySelector('h4');
+// element = courseName.nextElementSibling.nextElementSibling;
+// console.log(element);
 
+// Create a new Element
+// new anchor
+const newLink = document.createElement('a');
 
+// Add a class
+newLink.className = 'link';
+// add the href
+newLink.href = '#';
+// add the text
+newLink.appendChild(document.createTextNode('New Link'));
+
+console.log(newLink);
+
+// add the element to the HTML
+const parent = document.querySelector('#primary');
+parent.appendChild(newLink);
+console.log(parent);
