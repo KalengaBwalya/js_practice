@@ -235,17 +235,54 @@
 
 // console.log(newHeading);
 
-//Remove Elements
-const cards = document.querySelectorAll('.card');
+// //Remove Elements
+// const cards = document.querySelectorAll('.card');
 
-cards[0].remove();
+// cards[0].remove();
 
-console.log(cards);
+// console.log(cards);
 
-// Remove by the children
+// // Remove by the children
 
-const navigation = document.querySelector('#primary');
-const links = document.querySelectorAll('#primary .link')
+// const navigation = document.querySelector('#primary');
+// const links = document.querySelectorAll('#primary .link')
 
-navigation.removeChild(links[2]);
-console.log(links);
+// navigation.removeChild(links[2]);
+// console.log(links);
+
+// Classes, Ids & Attributes
+const link = document.querySelector('.link');
+let element;
+element = link;
+
+// read class
+element = link.className;
+// read the class (DOM Token List)
+element = link.classList;
+// Access specific class with classList
+element = link.classList[0];
+// add a new class
+link.classList.add('new-class');
+// remove the class
+link.classList.remove('link');
+
+// Ids
+link.id = 'new-id';
+// remove Id
+link.id = '';
+link.removeAttribute('id')
+
+// Attribute Functions
+element = link.getAttribute('href');
+element = link.getAttribute('class');
+element = link.setAttribute('href','http://facebook.com');
+element = link.setAttribute('target', '_blank'); 
+// custom attribute
+element = link.setAttribute('data-link', '10');
+element = link.hasAttribute('data-link');
+element = link.removeAttribute('data-link');
+
+console.log(element);
+
+
+
