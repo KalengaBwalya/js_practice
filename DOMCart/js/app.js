@@ -203,18 +203,34 @@ const cartBtn = document.querySelector(".add-to-cart");
 
 // Create a new Element
 // new anchor
-const newLink = document.createElement('a');
+// const newLink = document.createElement('a');
 
-// Add a class
-newLink.className = 'link';
-// add the href
-newLink.href = '#';
-// add the text
-newLink.appendChild(document.createTextNode('New Link'));
+// // Add a class
+// newLink.className = 'link';
+// // add the href
+// newLink.href = '#';
+// // add the text
+// newLink.appendChild(document.createTextNode('New Link'));
 
-console.log(newLink);
+// console.log(newLink);
 
-// add the element to the HTML
-const parent = document.querySelector('#primary');
-parent.appendChild(newLink);
-console.log(parent);
+// // add the element to the HTML
+// const parent = document.querySelector('#primary');
+// parent.appendChild(newLink);
+// console.log(parent);
+
+// Replace an Element
+const newHeading  = document.createElement('h1');
+// add id
+newHeading.id = 'heading';
+// add class
+newHeading.className = 'heading'
+// Add text
+newHeading.appendChild(document.createTextNode('The Great Courses'));
+
+// Replace in the HTML
+const oldHeading = document.querySelector('#heading');
+
+oldHeading.replaceWith(newHeading);
+
+console.log(newHeading);
