@@ -340,12 +340,35 @@ const searchForm = document.getElementById('search'),
     searchInput = document.getElementById('search-course');
 
 // Events for forms
-searchForm.addEventListener('submit', printEvent);
+// searchForm.addEventListener('submit', printEvent);
+
+// Input Events
+// Key Down
+// searchInput.addEventListener('keydown', printEvent);
+// Key Up
+// searchInput.addEventListener('keyup', printEvent);
+// Key Press
+// searchInput.addEventListener('keypress', printEvent);
+// Focus
+// searchInput.addEventListener('focus', printEvent);
+// Key Up
+// searchInput.addEventListener('blur', printEvent);
+// Cut
+// searchInput.addEventListener('cut', printEvent);
+// Copy
+// searchInput.addEventListener('copy', printEvent);
+// Paste
+// searchInput.addEventListener('paste', printEvent);
+// Input - Listens to all previous events
+searchInput.addEventListener('input', printEvent);
+
 
 function printEvent(event){
-    event.preventDefault(); // Stops Form's default action
-
-    // Print value from input
+    // event.preventDefault(); // Stops Form's default action
+    // if(searchInput.value.length == 0){
+    //     alert('Type Something Please');
+    // }  
+    // Print value from input 
     console.log(searchInput.value);
     console.log(`Type: ${event.type}`);
 }
