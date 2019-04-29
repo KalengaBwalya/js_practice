@@ -395,8 +395,8 @@
 
 // Delegation
 
-document.body.addEventListener('click', removeProductFromCart);
-const clearCartBtn = document.querySelector('#clear-cart');
+const shoppingCart = document.querySelector('#shopping-cart');
+shoppingCart.addEventListener('click', removeProductFromCart);
 function removeProductFromCart(event){
     // console.log(event.target.classList); 
 
@@ -405,5 +405,16 @@ function removeProductFromCart(event){
         event.target.parentElement.parentElement.remove();
     }else if (event.target.id == 'clear-cart'){
         event.target.previousElementSibling.remove();
+    }
+}
+
+// Add to cart
+const courseList = document.querySelector('#courses-list');
+
+courseList.addEventListener('click', addToCart);
+
+function addToCart(event){
+    if(event.target.classList.contains('add-to-cart')){
+        console.log("Course Added");
     }
 }
