@@ -310,10 +310,24 @@ const heading = document.querySelector('#heading');
 const links = document.querySelector('nav');
 const clearCartBtn = document.querySelector('#clear-cart');
 
-// Click Mouse event
-clearCartBtn.addEventListener('click', printEvent);
-// Double Click
-clearCartBtn.addEventListener('dblclick', printEvent);
+// // Click Mouse event
+// clearCartBtn.addEventListener('click', printEvent);
+// // Double Click
+// clearCartBtn.addEventListener('dblclick', printEvent);
+// // Mouse Enter
+// clearCartBtn.addEventListener('mouseenter', printEvent);
+// // Mouse Leave
+// clearCartBtn.addEventListener('mouseleave', printEvent);
+// // Mouse Over
+// clearCartBtn.addEventListener('mouseover', printEvent);
+// // Mouse out
+// clearCartBtn.addEventListener('mouseout ', printEvent);
+// // Mouse Up
+// clearCartBtn.addEventListener('mouseup', printEvent);
+// // Mouse Down
+// clearCartBtn.addEventListener('mousedown', printEvent);
+// Mouse Move
+heading.addEventListener('mousemove', printEvent);
 
 function printEvent(event){
     console.log(`The Event is ${event.type}`);
