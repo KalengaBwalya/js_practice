@@ -251,38 +251,42 @@
 // console.log(links);
 
 // Classes, Ids & Attributes
-const link = document.querySelector('.link');
-let element;
-element = link;
+// const link = document.querySelector('.link');
+// let element;
+// element = link;
 
-// read class
-element = link.className;
-// read the class (DOM Token List)
-element = link.classList;
-// Access specific class with classList
-element = link.classList[0];
-// add a new class
-link.classList.add('new-class');
-// remove the class
-link.classList.remove('link');
+// // read class
+// element = link.className;
+// // read the class (DOM Token List)
+// element = link.classList;
+// // Access specific class with classList
+// element = link.classList[0];
+// // add a new class
+// link.classList.add('new-class');
+// // remove the class
+// link.classList.remove('link');
 
-// Ids
-link.id = 'new-id';
-// remove Id
-link.id = '';
-link.removeAttribute('id')
+// // Ids
+// link.id = 'new-id';
+// // remove Id
+// link.id = '';
+// link.removeAttribute('id')
 
-// Attribute Functions
-element = link.getAttribute('href');
-element = link.getAttribute('class');
-element = link.setAttribute('href','http://facebook.com');
-element = link.setAttribute('target', '_blank'); 
-// custom attribute
-element = link.setAttribute('data-link', '10');
-element = link.hasAttribute('data-link');
-element = link.removeAttribute('data-link');
+// // Attribute Functions
+// element = link.getAttribute('href');
+// element = link.getAttribute('class');
+// element = link.setAttribute('href','http://facebook.com');
+// element = link.setAttribute('target', '_blank'); 
+// // custom attribute
+// element = link.setAttribute('data-link', '10');
+// element = link.hasAttribute('data-link');
+// element = link.removeAttribute('data-link');
 
-console.log(element);
+// console.log(element);
 
-
-
+// Event Listeners
+const clearCartBtn = document.getElementById('clear-cart');
+function clearCart(){
+    alert('You clicked the button!');
+}
+clearCartBtn.addEventListener('click', clearCart);
