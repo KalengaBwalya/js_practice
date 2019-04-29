@@ -286,7 +286,20 @@
 
 // Event Listeners
 const clearCartBtn = document.getElementById('clear-cart');
-function clearCart(){
-    alert('You clicked the button!');
-}
 clearCartBtn.addEventListener('click', clearCart);
+function clearCart(e){
+    // target
+    let element;
+    element = e;
+
+    // read target
+    element = e.target;
+    element = e.target.id;
+    element = e.target.className;
+    element = e.target.innerText;
+    element = e.target.innerText = 2 + 2;
+
+
+    console.log(element);
+
+}
