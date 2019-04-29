@@ -375,20 +375,35 @@
 
 // Event Bubbling
 // Variables
-const card = document.querySelector('.card'),
-    infoCards = document.querySelector('.info-card'),
-    addToCartBtn = document.querySelector('.add-to-cart');
+// const card = document.querySelector('.card'),
+//     infoCards = document.querySelector('.info-card'),
+//     addToCartBtn = document.querySelector('.add-to-cart');
 
-// Event Listeners
-card.addEventListener('click', function(event){
-    console.log('You clicked on the card');
-    event.stopPropagation(); // Prevents Event Bubbling
-});
-infoCards.addEventListener('click', function(event){
-    console.log('You clicked on the info card');
-    event.stopPropagation();
-});
-addToCartBtn.addEventListener('click', function(event){
-    console.log('You clicked on the add to cart button');
-    event.stopPropagation();
-});
+// // Event Listeners
+// card.addEventListener('click', function(event){
+//     console.log('You clicked on the card');
+//     event.stopPropagation(); // Prevents Event Bubbling
+// });
+// infoCards.addEventListener('click', function(event){
+//     console.log('You clicked on the info card');
+//     event.stopPropagation();
+// });
+// addToCartBtn.addEventListener('click', function(event){
+//     console.log('You clicked on the add to cart button');
+//     event.stopPropagation();
+// });
+
+// Delegation
+
+document.body.addEventListener('click', removeProductFromCart);
+const clearCartBtn = document.querySelector('#clear-cart');
+function removeProductFromCart(event){
+    // console.log(event.target.classList); 
+
+    if(event.target.classList.contains('remove')){
+        // console.log(event.target.parentElement.parentElement);
+        event.target.parentElement.parentElement.remove();
+    }else if (event.target.id == 'clear-cart'){
+        event.target.previousElementSibling.remove();
+    }
+}
