@@ -306,9 +306,9 @@
 // Mouse Events
 // create the variables
 
-const heading = document.querySelector('#heading');
-const links = document.querySelector('nav');
-const clearCartBtn = document.querySelector('#clear-cart');
+// const heading = document.querySelector('#heading');
+// const links = document.querySelector('nav');
+// const clearCartBtn = document.querySelector('#clear-cart');
 
 // // Click Mouse event
 // clearCartBtn.addEventListener('click', printEvent);
@@ -327,8 +327,25 @@ const clearCartBtn = document.querySelector('#clear-cart');
 // // Mouse Down
 // clearCartBtn.addEventListener('mousedown', printEvent);
 // Mouse Move
-heading.addEventListener('mousemove', printEvent);
+// heading.addEventListener('mousemove', printEvent);
+
+// function printEvent(event){
+//     console.log(`The Event is ${event.type}`);
+// }
+
+// Input & Form Events
+// Create the variables
+
+const searchForm = document.getElementById('search'),
+    searchInput = document.getElementById('search-course');
+
+// Events for forms
+searchForm.addEventListener('submit', printEvent);
 
 function printEvent(event){
-    console.log(`The Event is ${event.type}`);
+    event.preventDefault(); // Stops Form's default action
+
+    // Print value from input
+    console.log(searchInput.value);
+    console.log(`Type: ${event.type}`);
 }
