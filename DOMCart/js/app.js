@@ -285,21 +285,36 @@
 // console.log(element);
 
 // Event Listeners
-const clearCartBtn = document.getElementById('clear-cart');
-clearCartBtn.addEventListener('click', clearCart);
-function clearCart(e){
-    // target
-    let element;
-    element = e;
+// const clearCartBtn = document.getElementById('clear-cart');
+// clearCartBtn.addEventListener('click', clearCart);
+// function clearCart(event){
+//     // target
+//     let element;
+//     element = event;
 
-    // read target
-    element = e.target;
-    element = e.target.id;
-    element = e.target.className;
-    element = e.target.innerText;
-    element = e.target.innerText = 2 + 2;
+//     // read target
+//     element = event.target;
+//     element = event.target.id;
+//     element = event.target.className;
+//     element = event.target.innerText;
+//     element = event.target.innerText = 2 + 2;
 
+//     console.log(element);
 
-    console.log(element);
+// }
 
+// Mouse Events
+// create the variables
+
+const heading = document.querySelector('#heading');
+const links = document.querySelector('nav');
+const clearCartBtn = document.querySelector('#clear-cart');
+
+// Click Mouse event
+clearCartBtn.addEventListener('click', printEvent);
+// Double Click
+clearCartBtn.addEventListener('dblclick', printEvent);
+
+function printEvent(event){
+    console.log(`The Event is ${event.type}`);
 }
