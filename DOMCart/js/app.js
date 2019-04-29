@@ -336,8 +336,8 @@
 // Input & Form Events
 // Create the variables
 
-const searchForm = document.getElementById('search'),
-    searchInput = document.getElementById('search-course');
+// const searchForm = document.getElementById('search'),
+//     searchInput = document.getElementById('search-course');
 
 // Events for forms
 // searchForm.addEventListener('submit', printEvent);
@@ -360,15 +360,35 @@ const searchForm = document.getElementById('search'),
 // Paste
 // searchInput.addEventListener('paste', printEvent);
 // Input - Listens to all previous events
-searchInput.addEventListener('input', printEvent);
+// searchInput.addEventListener('input', printEvent);
 
 
-function printEvent(event){
-    // event.preventDefault(); // Stops Form's default action
-    // if(searchInput.value.length == 0){
-    //     alert('Type Something Please');
-    // }  
-    // Print value from input 
-    console.log(searchInput.value);
-    console.log(`Type: ${event.type}`);
-}
+// function printEvent(event){
+//     // event.preventDefault(); // Stops Form's default action
+//     // if(searchInput.value.length == 0){
+//     //     alert('Type Something Please');
+//     // }  
+//     // Print value from input 
+//     console.log(searchInput.value);
+//     console.log(`Type: ${event.type}`);
+// }
+
+// Event Bubbling
+// Variables
+const card = document.querySelector('.card'),
+    infoCards = document.querySelector('.info-card'),
+    addToCartBtn = document.querySelector('.add-to-cart');
+
+// Event Listeners
+card.addEventListener('click', function(event){
+    console.log('You clicked on the card');
+    event.stopPropagation(); // Prevents Event Bubbling
+});
+infoCards.addEventListener('click', function(event){
+    console.log('You clicked on the info card');
+    event.stopPropagation();
+});
+addToCartBtn.addEventListener('click', function(event){
+    console.log('You clicked on the add to cart button');
+    event.stopPropagation();
+});
