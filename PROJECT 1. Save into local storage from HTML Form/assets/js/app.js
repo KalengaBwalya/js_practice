@@ -46,14 +46,17 @@ function newTweet(event){
     // Add the remove button to each tweet
     li.appendChild(removeBtn);
 
-    // Alert
-    alert('New Tweet?')
-
     // Append tweet to the list
     tweetList.appendChild(li);
 
     //Add to local storage
     addTweetLocalStorage(tweet);
+
+    // Alert
+    alert('Tweet Added')
+
+    // Clear Form
+    this.reset();
 }
 
 // Remove the Tweets From the DOM
@@ -123,9 +126,12 @@ function removeTweetLocalStorage(tweet){
     const tweetDelete = tweet.substring(0, tweet.length - 1);
 
     // Loop through the tweets and remove the tweet that is equal
-    tweets.forEach(function(tweetLS){
+    tweets.forEach(function(tweetLS, index){
         if(tweetDelete === tweetLS){
-            console.log('Yes')
+            tweets.splice(index, 1)
         }
     });
+
+    // Refresh the Local Storage
+    localStorage.setItem('tweets', JSON.stringify(tweets));
 }
