@@ -395,26 +395,48 @@
 
 // Delegation
 
-const shoppingCart = document.querySelector('#shopping-cart');
-shoppingCart.addEventListener('click', removeProductFromCart);
-function removeProductFromCart(event){
-    // console.log(event.target.classList); 
+// const shoppingCart = document.querySelector('#shopping-cart');
+// shoppingCart.addEventListener('click', removeProductFromCart);
 
-    if(event.target.classList.contains('remove')){
-        // console.log(event.target.parentElement.parentElement);
-        event.target.parentElement.parentElement.remove();
-    }else if (event.target.id == 'clear-cart'){
-        event.target.previousElementSibling.remove();
-    }
-}
+// function removeProductFromCart(event) {
+//     // console.log(event.target.classList); 
 
-// Add to cart
-const courseList = document.querySelector('#courses-list');
+//     if (event.target.classList.contains('remove')) {
+//         // console.log(event.target.parentElement.parentElement);
+//         event.target.parentElement.parentElement.remove();
+//     } else if (event.target.id == 'clear-cart') {
+//         event.target.previousElementSibling.remove();
+//     }
+// }
 
-courseList.addEventListener('click', addToCart);
+// // Add to cart
+// const courseList = document.querySelector('#courses-list');
 
-function addToCart(event){
-    if(event.target.classList.contains('add-to-cart')){
-        console.log("Course Added");
-    }
-}
+// courseList.addEventListener('click', addToCart);
+
+// function addToCart(event) {
+//     if (event.target.classList.contains('add-to-cart')) {
+//         console.log("Course Added");
+//     }
+// }
+
+// Local Storage
+
+// Add to Local Storage
+// localStorage.setItem('name', 'Kalenga');
+
+// Add to Session Storage
+// sessionStorage.setItem('name', 'bwalya');
+
+// Remove from Local Storage
+// localStorage.removeItem('name');
+
+// Read the value
+// const name = localStorage.getItem('name');
+// console.log(name);
+
+// Clear Storage
+// localStorage.clear();
+
+localStorage.setItem('name', 'Kalenga');
+localStorage.setItem('name', 'Walter White');
