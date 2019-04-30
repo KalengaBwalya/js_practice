@@ -438,5 +438,23 @@
 // Clear Storage
 // localStorage.clear();
 
-localStorage.setItem('name', 'Kalenga');
-localStorage.setItem('name', 'Walter White');
+// localStorage.setItem('name', 'Kalenga');
+// localStorage.setItem('name', 'Walter White');
+
+const localStorageContent = localStorage.getItem('names');
+
+let names;
+if(localStorageContent === null){
+    names = [];
+} else {
+    names = JSON.parse(localStorageContent);
+}
+
+console.log(names);
+
+// names.push('Kalenga');
+// names.push('Melody');
+names.push('Mary');
+localStorage.setItem('names', JSON.stringify(names));
+
+console.log(names);
